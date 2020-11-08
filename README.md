@@ -28,7 +28,7 @@ AndroidAPI.ToShare("Goog game, bro! Let's go playing!");
 PermOnCallPhoneo() - получает разрешение на использование звонков\n
 PermOnRecordAudio() - получает разрешение на записывания аудио\n
 PermOnReadContacts() - получает разрешение на чтение контактов\n
-PermOnRead_Calender() - получает разрешение на чтения календаря(Ивента и тд)\n
+PermOnRead_Calender() - получает разрешение на чтения календаря(Ивента и тд)\n/*\*
 PermOnCamera() - получает разрешение на использование камеры\n
 PermOnWRITE_EXTERNAL_STORAGE() - получает разрешение на записывания файлов(Создание папок, файлов и тд)\n
 
