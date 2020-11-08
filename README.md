@@ -13,6 +13,12 @@ AndroidAPI.Toas("Hello");
 Vibration(int time) - вызывает вибрацию на устройстве игрока. Имеет атрибут типа int, отвечаещего за продолжительность вибрации (В мил.сек.)
 AndroidAPI.Vibration(500);
 
+SetVolumeMusic(int value) - Устанавливает громкость музыки на телефоне. Имеет атрибут типа int, отвечаещего за громкость
+AndroidAPI.SetVolumeMusic(10);
+
+StartApp(string packages) - Открывает сторонее приложение. Имеет атрибут типа string, отвечаещего за Package ID
+AndroidAPI.StartApp(com.example.app);
+
 /* Установка *\
 
 Разорхивируйте архив.
