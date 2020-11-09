@@ -71,7 +71,7 @@ AndroidAPI.OpenSoundsSettings();
 OpenSite(string url) - Метод открывающий браузер и автоматически переходит на указаный сайт. Имеет атрибут типа string, указывающий ссылку на сайт
 AndroidAPI.OpenSite("https://github.com/AntonRls/AndroidAPIForUnity/");
 
-OpenMap(string pos) - Открывает приложение карты, и автоматические вводить заданые кординаты. Имеет атрибут типа string, указывающий на кординаты
+OpenMap(string pos) - Открывает приложение карты, и автоматические вводит заданые кординаты. Имеет атрибут типа string, указывающий на кординаты
 AndroidAPI.OpenMap("-90, 90");
 
 ********************************
