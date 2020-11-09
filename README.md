@@ -19,8 +19,19 @@ AndroidAPI.SetVolumeMusic(10);
 StartApp(string packages) - Открывает сторонее приложение. Имеет атрибут типа string, отвечаещего за Package ID
 AndroidAPI.StartApp(com.example.app);
 
-ToShare(string message) - метод, с помощь которого можно отправить текст в различные соц. сети. Принимает атрибуты типа string, отвечающие за отправляемое сообщение
+ToShare(string message) - Метод, с помощь которого можно отправить текст в различные соц. сети. Принимает атрибуты типа string, отвечающие за отправляемое сообщение
 AndroidAPI.ToShare("Goog game, bro! Let's go playing!");
+
+SetBluetooth(bool active) - Метод, позволяющий взаимодействовать с Bluetooth пользователя. Имеет атрибуты типа bool, обозначающие включен ли Bluetooth
+AndroidAPI.SetBluetooth(true);
+
+SetLantern(bool act) - Метод, позволяющий взаимодействовать с фонариком пользователя. Имеет атрибуты типа bool, обозначающие включен ли фонарик
+AndroidAPI.SetLantern(false);
+
+getAppInstall(string app) - Возвращает, переменную типа bool, которая обозночает установлено ли приложение на устройстве пользователя(true - установлено, false - не установлено). Принимает атрибуты типа string, отвечающего за Package ID
+bool app = AndroidAPI.getAppInstall("com.example.app");
+if(app) AndroidAPI.Toas("install");
+if(!app) AndroidAPI.Toas("don't install");
 
 ********************************
 **Разрешения**
