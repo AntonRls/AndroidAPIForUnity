@@ -3,11 +3,13 @@ Android API для Unity
 
 В этом репозитории находится плагин для использования Android API в Unity
 
+***********************************************************************
+
 **Документация**
 
 Все методы вызываются через AndroidAPI
 
-Toas(string message) - вызывает всплывающее окно. Имеет атрибут типа string, который отвечает за показываемое сообщение
+Toast(string message) - вызывает всплывающее окно. Имеет атрибут типа string, который отвечает за показываемое сообщение
 AndroidAPI.Toas("Hello");
 
 Vibration(int time) - вызывает вибрацию на устройстве игрока. Имеет атрибут типа int, отвечаещего за продолжительность вибрации (В мил.сек.)
@@ -30,8 +32,41 @@ AndroidAPI.SetLantern(false);
 
 getAppInstall(string app) - Возвращает, переменную типа bool, которая обозночает установлено ли приложение на устройстве пользователя(true - установлено, false - не установлено). Принимает атрибуты типа string, отвечающего за Package ID
 bool app = AndroidAPI.getAppInstall("com.example.app");
-if(app) AndroidAPI.Toas("install");
-if(!app) AndroidAPI.Toas("don't install");
+if(app) AndroidAPI.Toast("install");
+if(!app) AndroidAPI.Toast("don't install");
+
+GetManufacturePhone() - Возвращает переменную типа string, обозначающая производителя телефона(Xiaomi, Samsung)
+string manuf = AndroidAPI.GetManufacturePhone();
+
+GetSdkPhone() - Возвращает переменную типа int, обозначающая версия SDK
+int sdk = AndroidAPI.GetSdkPhone();
+
+GetModelPhone() - Возвращает переменную типа string, обозначающая модель телефона(MI9, S10e)
+string model = AndroidAPI.GetModelPhone();
+
+GetDisplayInfoPhone() - Возвращает переменную типа string, обозначающая информацию о дисплее
+string disp = AndroidAPI.GetDisplayInfoPhone();
+
+CallPhone(string number) - Метод вызывающий звонок. Имеет атрибут типа string, означающий номер телефона
+AndroidAPI.CallPhone("79999999999");
+
+OpenSettings() - Метод открывающий настройки
+AndroidAPI.OpenSettings();
+
+OpenBluetoothSettings() - Метод открывающий настройки Bluetooth
+AndroidAPI.OpenBluetoothSettings();
+
+OpenDisplaySettings() - Метод открывающий настройки экрана
+AndroidAPI.OpenDisplaySettings();
+
+OpenDeviceInfoSettings() - Метод открывающий информацию о телефоне
+AndroidAPI.OpenDeviceInfoSettings();
+
+OpenApplicationSettings() - Метод открывающий настройки приложений
+AndroidAPI.OpenApplicationSettings();
+
+OpenSoundsSettings() - Метод открывающий настройки звуков
+AndroidAPI.OpenSoundsSettings();
 
 ********************************
 **Разрешения**
